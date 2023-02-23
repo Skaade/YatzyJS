@@ -1,0 +1,135 @@
+/* Dice */
+
+#dicePart {
+    display: grid;
+    grid-template-columns: repeat(5, 100px);
+    grid-template-rows: 1;
+    grid-column-gap: 5px;
+    grid-row-gap: 2px;
+}
+
+#dicePart .yeatzyDice {
+    grid-row: 1;
+    grid-row-end: 1;
+    width: 75px;
+    height: 50px;
+    grid-column: repeat(15, 50px);
+}
+
+input.yeatzyDice {
+    font-size: 20px;
+    text-align: center;
+    border-right: solid black;
+}
+
+input.yeatzyDice:hover {
+    background-color: rgb(200, 200, 200);
+}
+
+/* inputs */
+
+#inputPart {
+    display: grid;
+    grid-template-columns: repeat(2, 150px);
+    grid-template-rows: repeat(15, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 4px;
+    border: solid white;
+    padding: 2px;
+    margin: 5px;
+    width: 214px;
+}
+
+#inputPart .yeatzyIN {
+    grid-column: 2;
+    grid-column-end: 2;
+    width: 59px;
+    grid-row: repeat(15, 1fr);
+    text-align: start;
+}
+
+#inputPart .yeatzyLabel {
+    grid-column: 1;
+    grid-column-end: 1;
+    grid-row: repeat(15, 1fr);
+}
+
+/* Background aso*/
+
+body {
+    background-color: rgb(8, 8, 8);
+    font-family: 'SF Pixelate', sans-serif;
+    border-right: solid white;
+    width: 620px;
+    height: 800px;
+    padding: 2px;
+    margin: 2px;
+}
+
+label {
+    color: white;
+}
+
+input {
+    background-color: white;
+    color: black;
+    font-family: 'SF Pixelate', sans-serif;
+}
+
+p {
+    color: white;
+}
+
+button {
+    color: white;
+    background-color: rgb(8, 8, 8);
+    font-family: 'SF Pixelate', sans-serif;
+    border: solid white;
+    padding: 2px;
+    margin: 2px;
+}
+
+button:hover:not(.c) {
+    background-color: rgb(25, 25, 25);
+}
+
+.c {
+    color: transparent;
+    background-color: transparent;
+    border: solid transparent;
+    padding: 2px;
+    margin: 2px;
+    height: 20px;
+    width: 20px;
+}
+
+#c1 {
+    border: solid red;
+}
+
+#c2 {
+    border: solid orange;
+}
+
+#c3 {
+    border: solid yellow;
+}
+
+#c4 {
+    border: solid green;
+}
+
+#c5 {
+    border: solid blue;
+}
+
+input:hover {
+    background-color: rgb(200, 200, 200);
+}
+
+html,
+body {
+    margin: 0;
+    height: 100%;
+    overflow: hidden
+}

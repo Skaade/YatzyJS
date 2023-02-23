@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <script src="yatzy.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="yatzy.css" />
+    <link href="http://fonts.cdnfonts.com/css/sf-pixelate" rel="stylesheet">
+</head>
+
+<body>
+    <br>
+    <div id="dicePart">
+        <input class="yeatzyDice" onclick="saveAction(0, d1)" type="button" id="d1">
+        <input class="yeatzyDice" onclick="saveAction(1, d2)" type="button" id="d2">
+        <input class="yeatzyDice" onclick="saveAction(2, d3)" type="button" id="d3">
+        <input class="yeatzyDice" onclick="saveAction(3, d4)" type="button" id="d4">
+        <input class="yeatzyDice" onclick="saveAction(4, d5)" type="button" id="d5">
+        <button class="yeatzyDice" onclick="rollAction()" id="b1">Roll</button>
+    </div id="dicePart">
+
+    <br>
+
+    <div id="turn">
+        <p id="turnText">Press roll to start!</p>
+    </div id="turn">
+
+    <br>
+
+
+    <div id="inputPart">
+        <input class="yeatzyIN" type="button" id="1s" onclick="savePoints(0,this.id)">
+        <input class="yeatzyIN" type="button" id="2s" onclick="savePoints(1,this.id)">
+        <input class="yeatzyIN" type="button" id="3s" onclick="savePoints(2,this.id)">
+        <input class="yeatzyIN" type="button" id="4s" onclick="savePoints(3,this.id)">
+        <input class="yeatzyIN" type="button" id="5s" onclick="savePoints(4,this.id)">
+        <input class="yeatzyIN" type="button" id="6s" onclick="savePoints(5,this.id)"> <br>
+        <input class="yeatzyIN" type="number" id="Sum" style="background-color: rgb(200,200,200); width: 50px;"
+            disabled="true">
+            <!-- Css i css -->
+        <input class="yeatzyIN" type="number" id="Bonus" style="background-color: rgb(200,200,200); width: 50px;"
+            disabled="true"> <br>
+        <input class="yeatzyIN" type="button" id="One_pair" onclick="savePoints(8,this.id)">
+        <input class="yeatzyIN" type="button" id="Two_pair" onclick="savePoints(9,this.id)">
+        <input class="yeatzyIN" type="button" id="Three_same" onclick="savePoints(10,this.id)">
+        <input class="yeatzyIN" type="button" id="Four_same" onclick="savePoints(11,this.id)">
+        <input class="yeatzyIN" type="button" id="Full_house" onclick="savePoints(12,this.id)">
+        <input class="yeatzyIN" type="button" id="Small_straigt" onclick="savePoints(13,this.id)">
+        <input class="yeatzyIN" type="button" id="Large_straight" onclick="savePoints(14,this.id)">
+        <input class="yeatzyIN" type="button" id="Chance" onclick="savePoints(15,this.id)">
+        <input class="yeatzyIN" type="button" id="Yatzy" onclick="savePoints(16,this.id)"> <br>
+        <input class="yeatzyIN" type="number" id="Total" style="background-color: rgb(200,200,200); width: 50px;"
+            disabled="true">
+    </div id="inputPart">
+
+    <div id="cheats">
+        <button class="c" onclick="cheatSixesYatzy()" id="c1"></button>
+        <button class="c" onclick="cheatHouse()" id="c2"></button>
+        <button class="c" onclick="cheatStraightS()" id="c3"></button>
+        <button class="c" onclick="cheatStraightL()" id="c4"></button>
+        <button class="c" onclick="cheatInfinityDie()" id="c5"></button>+
+    </div id="cheats">
+
+</body>
+
+</html>
